@@ -1,0 +1,16 @@
+name: Validate Filter Lists
+on:
+  pull_request:
+    paths: ['lists/**', 'schema.json']
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install jsonschema
+      - name: Validate filter lists
+        run: python tools/validate.py

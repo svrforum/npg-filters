@@ -1,0 +1,7 @@
+{
+  "name": "Web Scanners",
+  "description": "Known web vulnerability scanner IPs",
+  "type": "ip",
+  "expires": "24h",
+  "entries": []
+}

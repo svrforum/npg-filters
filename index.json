@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-03-31T01:22:53Z",
+  "total_lists": 3,
+  "lists": [
+    {
+      "path": "lists/cidrs/known-botnets.json",
+      "name": "Known Botnets",
+      "description": "Known botnet IP ranges",
+      "type": "cidr",
+      "expires": "24h",
+      "entry_count": 0,
+      "updated_at": "2026-03-31T01:22:17Z"
+    },
+    {
+      "path": "lists/ips/web-scanners.json",
+      "name": "Web Scanners",
+      "description": "Known web vulnerability scanner IPs",
+      "type": "ip",
+      "expires": "24h",
+      "entry_count": 0,
+      "updated_at": "2026-03-31T01:22:15Z"
+    },
+    {
+      "path": "lists/user-agents/malicious-tools.json",
+      "name": "Malicious Tools",
+      "description": "User-Agent patterns for known attack tools",
+      "type": "user_agent",
+      "expires": "24h",
+      "entry_count": 3,
+      "updated_at": "2026-03-31T01:22:22Z"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Malicious Tools",
+  "description": "User-Agent patterns for known attack tools",
+  "type": "user_agent",
+  "expires": "24h",
+  "entries": [
+    {"value": "sqlmap", "reason": "SQL injection tool", "added": "2026-03-31", "contributor": "svrforum"},
+    {"value": "nikto", "reason": "Web vulnerability scanner", "added": "2026-03-31", "contributor": "svrforum"},
+    {"value": "nmap", "reason": "Network scanner", "added": "2026-03-31", "contributor": "svrforum"}
+  ]
+}

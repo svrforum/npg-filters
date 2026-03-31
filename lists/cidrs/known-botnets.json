@@ -1,0 +1,7 @@
+{
+  "name": "Known Botnets",
+  "description": "Known botnet IP ranges",
+  "type": "cidr",
+  "expires": "24h",
+  "entries": []
+}
