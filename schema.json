@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NPG Filter List",
+  "description": "Community-driven security filter list for Nginx Proxy Guard",
+  "type": "object",
+  "required": ["name", "description", "type", "expires", "entries"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "description": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "type": { "type": "string", "enum": ["ip", "cidr", "user_agent"] },
+    "expires": { "type": "string", "pattern": "^(6h|12h|24h|48h)$" },
+    "max_entries": { "type": "integer", "minimum": 1, "maximum": 5000, "default": 5000 },
+    "entries": {
+      "type": "array",
+      "maxItems": 5000,
+      "items": {
+        "type": "object",
+        "required": ["value", "reason", "added", "contributor"],
+        "properties": {
+          "value": { "type": "string", "minLength": 1 },
+          "reason": { "type": "string", "minLength": 1, "maxLength": 500 },
+          "added": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+          "contributor": { "type": "string", "minLength": 1, "maxLength": 100 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
