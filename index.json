@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-31T01:22:53Z",
+  "generated_at": "2026-03-31T01:23:16Z",
   "total_lists": 3,
   "lists": [
     {
@@ -9,7 +9,7 @@
       "type": "cidr",
       "expires": "24h",
       "entry_count": 0,
-      "updated_at": "2026-03-31T01:22:17Z"
+      "updated_at": "2026-03-31T01:23:15Z"
     },
     {
       "path": "lists/ips/web-scanners.json",
@@ -18,7 +18,7 @@
       "type": "ip",
       "expires": "24h",
       "entry_count": 0,
-      "updated_at": "2026-03-31T01:22:15Z"
+      "updated_at": "2026-03-31T01:23:15Z"
     },
     {
       "path": "lists/user-agents/malicious-tools.json",
@@ -27,7 +27,7 @@
       "type": "user_agent",
       "expires": "24h",
       "entry_count": 3,
-      "updated_at": "2026-03-31T01:22:22Z"
+      "updated_at": "2026-03-31T01:23:15Z"
     }
   ]
 }
